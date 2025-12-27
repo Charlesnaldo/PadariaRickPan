@@ -2,12 +2,6 @@
 
 
 
-/**
- * PRELOAD
- * 
- * loading will be end after document is loaded
- */
-
 const preloader = document.querySelector("[data-preaload]");
 
 window.addEventListener("load", function () {
@@ -16,10 +10,6 @@ window.addEventListener("load", function () {
 });
 
 
-
-/**
- * add event listener on multiple elements
- */
 
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
@@ -171,3 +161,21 @@ window.addEventListener("mousemove", function (event) {
 
 
 
+
+
+const navbarLinks = document.querySelectorAll('.navbar-link');
+
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Fecha a navbar
+    document.querySelector('.navbar').classList.remove('active');
+    document.querySelector('.overlay').classList.remove('active');
+    document.body.classList.remove('nav-active'); // Remove o bloqueio do scroll
+
+    // Faz o scroll suave para a seção
+    const targetId = link.getAttribute('href');
+    if (targetId.startsWith('#')) {
+      document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
