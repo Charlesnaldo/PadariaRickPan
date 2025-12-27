@@ -2483,9 +2483,17 @@ textarea.input-field {
   z-index: 4;
   font-size: 32px;
   transition: var(--transition-1);
+  animation: float 2s ease-in-out infinite;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .whatsapp-btn:is(:hover, :focus-visible) {
   background-color: #0e5c07;
   color: #fff;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
 }
