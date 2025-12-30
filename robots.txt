@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.padariarickpan.com.br/sitemap.xml
+Sitemap: https://www.rickpan.com.br/sitemap.xml
