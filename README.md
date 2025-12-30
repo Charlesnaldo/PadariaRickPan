@@ -1,4 +1,5 @@
 # 🍞 Padaria Rick Pan – Sabor com Qualidade
+www.rickpan.com.br
 
 Site institucional da **Padaria Rick Pan**, desenvolvido para apresentar a padaria, seus produtos, horários de funcionamento e formas de contato de maneira simples, moderna e responsiva.
 
