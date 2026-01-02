@@ -1875,10 +1875,12 @@ body.nav-active {
 
   .hero .slider-btn.prev {
     left: 30px;
+    border-radius: 40px;
   }
 
   .hero .slider-btn.next {
     right: 30px;
+    border-radius: 40px;
   }
 
   .hero .slider-btn:is(:hover, :focus-visible) {
